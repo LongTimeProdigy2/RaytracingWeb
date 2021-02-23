@@ -286,7 +286,7 @@ PointVector3Z.value = lights[1].position.z;
 var spheres = [
     new Sphere(
         "sphere_red", 
-        new Vector3(0, -1, 2), 
+        new Vector3(0, -0.7, 2), 
         0.3, 
         new Color(255, 0, 0, 255), 
         500, 
