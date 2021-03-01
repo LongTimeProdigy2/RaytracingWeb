@@ -211,7 +211,7 @@ ShadowMergeIntensity.onchange = () => {
 
 var lights = [
     new AmbientLight(0.2), 
-    new PointLight(0.4, new Vector3(0, 1, 2)), 
+    new PointLight(0.4, new Vector3(0, 1, 2), 1), 
     new DirectionalLight(0.4, new Vector3(1, 4, 4)), 
 ]
 //#region Lighting
@@ -602,7 +602,7 @@ function ComputeLight(hitPoint, normal, viewDirection, specular) {
             let lightDirection;
             if(light.type == "point"){
                 lightDirection = Vector3.Minus(light.position, hitPoint);
-                t_max = 1;
+                t_max = light.distance;
             }
             else{
                 lightDirection = light.direction;
