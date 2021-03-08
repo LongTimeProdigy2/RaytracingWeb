@@ -41,6 +41,13 @@
 </head>
 <body>
     <h1>Welcome to Lee's CPU Raytracing</h1>
+    <p>Raytrace를 CPU로 작동하게 작성하였습니다.</p>
+    <p>Camera로부터 Viewport 그리고 Canvas까지 CPU가 직접 계산합니다.</p>
+    <p>각 Canvas의 Pixel로부터 모든 라이팅과 그림자를 계산합니다.</p>
+    <p>또한 BoundingCount와 물체의 Reflection을 조정하여 Reflection의 세부조정이 가능하며</p>
+    <p>물체의 Specular를 이용하여 라이팅의 영향을 조절할 수 있습니다.</p>
+    <p>더하여 ShadowMerge와 ShadowIntensity를 조절하여 각 광원으로부터의 그림자를 단조롭게 조절하는 것이 가능합니다.</p>
+    <p>모든 코드는 <a href="https://github.com/LongtimeProdigy/RaytracingWeb" target="_blank">Github</a>에 공개되어 있습니다.</p>
     <canvas id="RayTrace" width="600" height="600"></canvas>
     <div id="leftupper">
         <div id="side_left">
